@@ -10,7 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'BRF-SCNN-Recursos Humanos 2022'
