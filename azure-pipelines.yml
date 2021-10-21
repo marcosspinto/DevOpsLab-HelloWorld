@@ -13,7 +13,7 @@ steps:
 
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'Azure-SPN-Connection'
+    azureSubscription: 'BRF-SCNN-Recursos Humanos 2022'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az group list -o table'
