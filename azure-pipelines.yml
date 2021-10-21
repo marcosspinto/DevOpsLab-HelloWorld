@@ -1,7 +1,7 @@
-# Python package
-# Create and test a Python package on multiple Python versions.
-# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
 
 trigger:
 - main
@@ -10,9 +10,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'BRF-SCNN-Recursos Humanos 2022'
+    azureSubscription: 'Azure-SPN-Connection'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az group list -o table'
